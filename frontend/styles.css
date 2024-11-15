@@ -1,0 +1,215 @@
+/* 전체 스타일 */
+body {
+    font-family: Arial, sans-serif;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #eaf6fc;
+    color: #333;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* 제목 스타일 */
+h1 {
+    text-align: center;
+    color: #4a90e2;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #4a90e2;
+    font-size: 1.4em;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+/* 메인 컨테이너 레이아웃 */
+.main-container {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+/* 왼쪽 컬럼 스타일 */
+.left-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+/* 오른쪽 컬럼 스타일 */
+.right-column {
+    flex: 1.2;
+}
+
+/* 추천 폼 스타일 */
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    font-size: 0.9em;
+    border: 1px solid #d9edf7;
+}
+
+label {
+    margin-top: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+input, select {
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #aacfe8;
+    font-size: 0.9em;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #f5fbff;
+}
+
+/* 버튼 스타일 */
+button {
+    cursor: pointer;
+    background-color: #82cfff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #63b7e6;
+}
+
+/* 추천 강의 카드 스타일 */
+.recommendation-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+    font-size: 0.85em;
+}
+
+.recommendation-card:hover {
+    transform: translateY(-5px);
+}
+
+.recommendation-card h3 {
+    color: #333;
+    margin-top: 0;
+    font-size: 1em;
+}
+
+.recommendation-card p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.recommendation-card button {
+    background-color: #82cfff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 5px 8px;
+    font-size: 0.8em;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.recommendation-card button:hover {
+    background-color: #63b7e6;
+}
+
+/* 주간 시간표 스타일 */
+.weekly-timetable {
+    display: grid;
+    grid-template-columns: 120px repeat(5, 1fr); /* 첫 번째 컬럼은 시간 */
+    gap: 2px;
+    margin-top: 15px;
+    border: 1px solid #aacfe8;
+    border-radius: 8px;
+    overflow: hidden;
+    font-size: 0.8em;
+}
+
+.timetable-header, .timetable-body {
+    display: contents;
+}
+
+.timetable-header div {
+    background-color: #4a90e2;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 8px;
+    border: 1px solid #aacfe8; /* 테두리 */
+    font-size: 0.75em;
+}
+
+.time-label {
+    background-color: #f5fbff;
+    font-weight: bold;
+    text-align: center;
+    padding: 8px;
+    border: 1px solid #aacfe8;
+    font-size: 0.75em;
+}
+
+.time-slot {
+    border: 1px solid #aacfe8;
+    position: relative;
+    background-color: #ffffff;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.time-slot .course {
+    background-color: #82cfff;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    font-size: 0.75em;
+    line-height: 1.2;
+}
+
+.course .remove-btn {
+    margin-top: 5px;
+    font-size: 0.7em;
+    color: #fff;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
